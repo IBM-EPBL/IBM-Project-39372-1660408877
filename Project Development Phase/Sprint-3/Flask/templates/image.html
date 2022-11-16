@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI based analyzer for Fitness Enthusiasts </title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}">
+</head>
+<body>
+    <nav>
+        <h2> <span>Nutrition</span> Image Analysis</h2>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li class="page-selected"><a href="image">Classify</a></li>
+        </ul>
+    </nav>
+    <main id="classify-main">
+        <div>
+            <h3>Choose an image to classify</h3>
+            <button class="primary-button">Choose</button>
+            <img src="" alt="" id="image-viewer">
+            <button class="secondary-button">Classify</button>
+        </div>
+        <div id="output">
+             <h3>Output</h3>
+             <p>Food is classified as:</p>
+             <div id="output-wrapper">
+                 <p id="output-result"></p>
+                 <p id="output-api-result"></p>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="{{url_for('static', filename='js/app.js')}}"></script>
+</html>
